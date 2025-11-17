@@ -21,7 +21,7 @@ header {
     padding: 10px 40px;
 }
 
-header > img {
+header  img {
     width: 18rem;
 }
 
@@ -241,8 +241,9 @@ main {
 
 .sobre {
     padding: 40px 8vw;
-    background-color: #ffffff;
+    background-color: #e9faff; /* igual ao contato */
 }
+
 
 .sobre h2 {
     text-align: center;
@@ -397,8 +398,38 @@ footer {
   flex-shrink: 0;
 }
 
-.contato-info-item > div {
+.contato-info-item > section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+
+.filtros {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filtro-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.filtro-btn.ativo {
+  border-color: #00e0ff;
+  background: #00e0ff;
+  color: #fff;
+  font-weight: bold;
+  color: #000;
+}
+
+body.pagina-sobre {
+  background-color: #e9faff; /* mesma cor da .contato */
 }

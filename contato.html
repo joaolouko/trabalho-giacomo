@@ -4,13 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jo">
+  <meta name="description" content="Site criartes, produtos personalizados">
+  <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="/styles.css">
   <title>Contato - Criartes</title>
 </head>
 
 <body>
   <header>
-    <img src="/img/logo.png" alt="Logo Criartes">
+    <a href="./index.html">
+      <img src="/img/logo.png" alt="Logo Criartes">
+    </a>
 
     <ul>
       <li><a href="./index.html">Início</a></li>
@@ -28,43 +33,43 @@
         Fala com a gente pelos canais abaixo ou preencha o formulário:
       </p>
 
-      <div class="contato-grid">
+      <!-- GRID PRINCIPAL -->
+      <section class="contato-grid">
 
         <!-- COLUNA ESQUERDA (TODOS OS 3 BLOCOS JUNTOS) -->
-        <div class="contato-coluna-esquerda">
+        <aside class="contato-coluna-esquerda">
 
           <!-- WHATSAPP -->
-          <div class="contato-info-item">
+          <article class="contato-info-item">
             <img src="/img/whats.png" alt="Ícone WhatsApp" class="contato-icone-img">
-            <div>
+            <section>
               <h3>WhatsApp</h3>
-             
               <a href="#" class="btn-primario">Chamar no Whats</a>
-            </div>
-          </div>
+            </section>
+          </article>
 
           <!-- EMAIL -->
-          <div class="contato-info-item">
+          <article class="contato-info-item">
             <img src="/img/email.png" alt="Ícone E-mail" class="contato-icone-img">
-            <div>
+            <section>
               <h3>E-mail</h3>
               <p>contato@criartes.com.br</p>
-            </div>
-          </div>
+            </section>
+          </article>
 
           <!-- HORÁRIO -->
-          <div class="contato-info-item">
+          <article class="contato-info-item">
             <img src="/img/relogio.png" alt="Ícone Relógio" class="contato-icone-img">
-            <div>
+            <section>
               <h3>Horário de atendimento</h3>
               <p>Segunda a sexta, das 9h às 18h.</p>
-            </div>
-          </div>
+            </section>
+          </article>
 
-        </div>
+        </aside>
 
         <!-- FORMULÁRIO (COLUNA DA DIREITA) -->
-        <form class="contato-form">
+        <form class="contato-form" id="contato-form">
           <label>Nome</label>
           <input type="text" placeholder="Seu nome completo">
 
@@ -80,13 +85,15 @@
           <button type="submit" class="btn-secundario">Enviar mensagem</button>
         </form>
 
-      </div>
+      </section>
     </section>
   </main>
 
   <footer>
     <p>© 2025 Criartes Presentes &amp; Personalizados. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>

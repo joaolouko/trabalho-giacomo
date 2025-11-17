@@ -4,13 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jo">
+  <meta name="description" content="Site criartes, produtos personalizados">
+  <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="/styles.css">
   <title>Loja - Criartes</title>
 </head>
 
 <body>
   <header>
-    <img src="/img/logo.png" alt="Logo Criartes">
+    <a href="./index.html">
+      <img src="/img/logo.png" alt="Logo Criartes">
+    </a>
 
     <ul>
       <li><a href="./index.html">Início</a></li>
@@ -24,78 +29,158 @@
     <section class="produtos">
       <h2>Nossa loja</h2>
 
+      <nav class="filtros" aria-label="Filtro de categorias de produtos">
+        <button class="filtro-btn ativo" data-filtro="todos">Todos</button>
+        <button class="filtro-btn" data-filtro="canecas">Canecas</button>
+        <button class="filtro-btn" data-filtro="vestuario">Vestuário</button>
+        <button class="filtro-btn" data-filtro="almofadas">Almofadas</button>
+        <button class="filtro-btn" data-filtro="lembrancinhas">Lembrancinhas</button>
+      </nav>
+
       <p style="text-align:center; margin-bottom:25px;">
-        Escolha sua categoria favorita e encontre o presente perfeito.  
+        Escolha sua categoria favorita e encontre o presente perfeito.
         Todos os produtos podem ser personalizados com nomes, frases e artes exclusivas.
       </p>
 
-      <div class="produtos-grid">
-        <article class="produto-card">
-          <img src="/img/camisa.jpg" alt="Caneca com ursinho">
-          <h3>Caneca “Você me faz feliz”</h3>
+      <section class="produtos-grid">
+        <article class="produto-card" data-categoria="canecas">
+          <img src="/img/caneca_branca.png" alt="Caneca branca personalizada">
+          <h3>Caneca Branca Personalizada</h3>
           <p class="produto-descricao">
-            Caneca em cerâmica com estampa romântica, ideal para presentear quem você ama.
+            Caneca em cerâmica branca, perfeita para colocar nome, frase ou ilustração especial.
+          </p>
+          <p class="produto-preco">R$ 39,90</p>
+          <button class="btn-secundario">Comprar</button>
+        </article>
+
+        <article class="produto-card" data-categoria="canecas">
+          <img src="/img/caneca_dourada_prata.png" alt="Canecas dourada e prata">
+          <h3>Kit Canecas Dourada &amp; Prata</h3>
+          <p class="produto-descricao">
+            Dupla de canecas metalizadas dourada e prata, com brilho intenso e personalização exclusiva.
+          </p>
+          <p class="produto-preco">R$ 89,90</p>
+          <button class="btn-secundario">Comprar</button>
+        </article>
+
+        <article class="produto-card" data-categoria="canecas">
+          <img src="/img/caneca_magica.png" alt="Caneca mágica personalizada">
+          <h3>Caneca Mágica Personalizada</h3>
+          <p class="produto-descricao">
+            Ao adicionar bebida quente, a estampa aparece como mágica. Ideal para surpreender em presentes.
           </p>
           <p class="produto-preco">R$ 59,90</p>
-          <button class="btn-secundario">Adicionar ao carrinho</button>
+          <button class="btn-secundario">Comprar</button>
         </article>
 
-        <article class="produto-card">
-          <img src="/img/camisa.jpg" alt="Caneca dourada Good Vibes">
-          <h3>Caneca Dourada “Good Vibes”</h3>
+        <article class="produto-card" data-categoria="canecas">
+          <img src="/img/caneca_preta.png" alt="Caneca preta personalizada">
+          <h3>Caneca Preta Premium</h3>
           <p class="produto-descricao">
-            Caneca metalizada dourada com frase inspiradora e acabamento brilhante.
+            Caneca preta com acabamento fosco, perfeita para frases minimalistas e artes modernas.
           </p>
-          <p class="produto-preco">R$ 69,90</p>
-          <button class="btn-secundario">Adicionar ao carrinho</button>
+          <p class="produto-preco">R$ 44,90</p>
+          <button class="btn-secundario">Comprar</button>
         </article>
 
-        <article class="produto-card">
-          <img src="/img/camisa.jpg" alt="Boné Now United">
-          <h3>Boné Now United</h3>
+        <article class="produto-card" data-categoria="vestuario">
+          <img src="/img/camiseta_adulto.png" alt="Camiseta adulto personalizada">
+          <h3>Camiseta Adulto Personalizada</h3>
           <p class="produto-descricao">
-            Boné ajustável com estampa oficial, perfeito para fãs do grupo.
+            Camiseta unissex em malha premium, ideal para estampas de times, frases e artes exclusivas.
           </p>
-          <p class="produto-preco">R$ 79,90</p>
-          <button class="btn-secundario">Adicionar ao carrinho</button>
+          <p class="produto-preco">R$ 59,90</p>
+          <button class="btn-secundario">Comprar</button>
         </article>
 
-        <article class="produto-card">
-          <img src="/img/camisa.jpg" alt="Kit camisetas gamer">
-          <h3>Kit Camiseta Casal Gamer</h3>
-          <p class="produto-descricao">
-            Conjunto de camisetas “Player 1 &amp; Player 2” com personalização de cores e nomes.
-          </p>
-          <p class="produto-preco">R$ 119,90</p>
-          <button class="btn-secundario">Adicionar ao carrinho</button>
-        </article>
-
-        <article class="produto-card">
-          <img src="/img/camisa.jpg" alt="Moletom Star Wars">
-          <h3>Moletom Star Wars</h3>
-          <p class="produto-descricao">
-            Moletom felpado com estampa exclusiva Star Wars, diversas cores disponíveis.
-          </p>
-          <p class="produto-preco">R$ 149,90</p>
-          <button class="btn-secundario">Adicionar ao carrinho</button>
-        </article>
-
-        <article class="produto-card">
-          <img src="/img/camisa.jpg" alt="Camiseta infantil personalizada">
+        <article class="produto-card" data-categoria="vestuario">
+          <img src="/img/camiseta_crianca.png" alt="Camiseta infantil personalizada">
           <h3>Camiseta Infantil Personalizada</h3>
           <p class="produto-descricao">
-            Personalize com o nome da criança, personagem favorito e idade.
+            Perfeita para aniversários e datas especiais, com personagem favorito e nome da criança.
+          </p>
+          <p class="produto-preco">R$ 49,90</p>
+          <button class="btn-secundario">Comprar</button>
+        </article>
+
+        <article class="produto-card" data-categoria="vestuario">
+          <img src="/img/camisetas_coloridas.png" alt="Camisetas coloridas">
+          <h3>Kit Camisetas Coloridas</h3>
+          <p class="produto-descricao">
+            Conjunto de camisetas em várias cores, prontas para receber sua estampa personalizada.
+          </p>
+          <p class="produto-preco">R$ 129,90</p>
+          <button class="btn-secundario">Comprar</button>
+        </article>
+
+        <article class="produto-card" data-categoria="vestuario">
+          <img src="/img/camisetas_mangas_coloridas.png" alt="Camisetas com mangas coloridas">
+          <h3>Camiseta Mangas Coloridas</h3>
+          <p class="produto-descricao">
+            Modelo moderno com mangas coloridas, ideal para uniformes, times e grupos.
           </p>
           <p class="produto-preco">R$ 69,90</p>
-          <button class="btn-secundario">Adicionar ao carrinho</button>
+          <button class="btn-secundario">Comprar</button>
         </article>
-      </div>
+
+        <article class="produto-card" data-categoria="vestuario">
+          <img src="/img/body_bebe.png" alt="Body bebê personalizado">
+          <h3>Body Bebê Personalizado</h3>
+          <p class="produto-descricao">
+            Body confortável para bebês, com estampas fofas e possibilidade de colocar nome e data.
+          </p>
+          <p class="produto-preco">R$ 54,90</p>
+          <button class="btn-secundario">Comprar</button>
+        </article>
+
+        <article class="produto-card" data-categoria="almofadas">
+          <img src="/img/almofada_coracao.png" alt="Almofada de coração">
+          <h3>Almofada Coração</h3>
+          <p class="produto-descricao">
+            Almofada em formato de coração com mensagem romântica, perfeita para presentear quem você ama.
+          </p>
+          <p class="produto-preco">R$ 39,90</p>
+          <button class="btn-secundario">Comprar</button>
+        </article>
+
+        <article class="produto-card" data-categoria="almofadas">
+          <img src="/img/almofadas_personalizadas.png" alt="Almofadas personalizadas">
+          <h3>Almofadas Personalizadas</h3>
+          <p class="produto-descricao">
+            Almofadas com fotos, frases ou ilustrações, para decorar sala, quarto ou escritório.
+          </p>
+          <p class="produto-preco">R$ 49,90</p>
+          <button class="btn-secundario">Comprar</button>
+        </article>
+
+        <article class="produto-card" data-categoria="lembrancinhas">
+          <img src="/img/copo_lembranca.png" alt="Copo lembrancinha personalizada">
+          <h3>Copo Lembrancinha Personalizado</h3>
+          <p class="produto-descricao">
+            Copos personalizados para festas, eventos e datas especiais, com nome e tema da comemoração.
+          </p>
+          <p class="produto-preco">R$ 6,90 (cada)</p>
+          <button class="btn-secundario">Comprar</button>
+        </article>
+
+        <article class="produto-card" data-categoria="lembrancinhas">
+          <img src="/img/almofadas_chaveiros_personalizadas.png" alt="Almofadas e chaveiros personalizados">
+          <h3>Kit Almofadas &amp; Chaveiros Personalizados</h3>
+          <p class="produto-descricao">
+            Kit com mini almofadas e chaveiros personalizados, ideal como lembrancinha para festas e eventos.
+          </p>
+          <p class="produto-preco">R$ 12,90 (cada kit)</p>
+          <button class="btn-secundario">Comprar</button>
+        </article>
+      </section>
     </section>
   </main>
 
   <footer>
     <p>© 2025 Criartes Presentes &amp; Personalizados. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="/script.js"></script>
 </body>
 
 </html>
