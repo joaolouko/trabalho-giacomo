@@ -340,7 +340,7 @@ body.pagina-loja {
     }
 
     .contato-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
     header {
